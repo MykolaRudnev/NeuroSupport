@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ProfileProvider } from "@/contexts/ProfileContext";
+import Script from "next/script";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -41,6 +42,11 @@ export default function RootLayout({
             </footer>
           </ProfileProvider>
         </LanguageProvider>
+        <Script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="99509f4f-5fe8-4f80-a07f-e7d305165ba7"
+        />
       </body>
     </html>
   );
