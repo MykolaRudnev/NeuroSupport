@@ -40,12 +40,12 @@ export default function Navbar() {
                     </div>
 
                     <div className="hidden md:flex items-center gap-4">
-                        <Link
+                        {/* <Link
                             href="/chat"
                             className="bg-primary-100 text-primary-700 hover:bg-primary-200 px-4 py-2 rounded-full text-sm font-semibold transition-colors flex items-center gap-2"
                         >
                             <span>🤖</span> {t.nav.chat}
-                        </Link>
+                        </Link> */}
 
                         {/* Desktop Language Switcher */}
                         <div className="hidden md:flex items-center gap-2 border-l pl-6 border-gray-200 ml-2">
@@ -87,13 +87,13 @@ export default function Navbar() {
                             {link.name}
                         </Link>
                     ))}
-                    <Link
+                    {/* <Link
                         href="/chat"
                         className="block w-full text-center bg-primary-100 text-primary-700 font-semibold py-3 rounded-xl mt-4"
                         onClick={() => setIsOpen(false)}
                     >
                         {t.nav.chat}
-                    </Link>
+                    </Link> */}
                 </div>
             )}
         </nav>
